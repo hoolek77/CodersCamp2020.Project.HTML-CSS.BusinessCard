@@ -83,7 +83,7 @@ a {
 }
 
 .nav-item:hover {
-  color: #FF9A3D;
+  color: #FFC53D;
   transition: all .2s;
 }
 
@@ -117,18 +117,205 @@ p.name {
   padding-top: 2rem;
 }
 
-.fa-twitter {
-  color: var(--color-secondary);
+.social-icons .fab {
+  color: var(--color-secondary)
 }
 
-.fa-linkedin {
-  color: var(--color-secondary);
+.social-icons .fab:hover {
+  color: #FF9A3D;
+  transition: all .2;
 }
 
-.fa-github {
-  color: var(--color-secondary);
+/* Contact */
+
+.contact {
+  display: flex;
+  align-items: center;
+  height: 15rem;
+  text-align: center;
 }
 
-.fa-facebook {
-  color: var(--color-secondary);
+h2.help {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.btn-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 2rem;
+}
+
+.btn {
+  width: 20rem;
+  height: 5rem;
+  border: 1px solid #ffc53d;
+  border-radius: 15px;
+  font-size: 1.5rem;
+  font-weight: 400;
+  color: #ffc53d;
+  background-color: white;
+}
+
+button.btn:hover {
+  background: var(--btn-gradient);
+  color: white;
+  transition: all .2s;
+}
+
+.btn-right {
+  margin-left: 3.5rem;
+}
+
+/* About me */
+
+.about-me {
+  position: relative;
+  background: linear-gradient(to right, #FAFAFF 60%, #fff 40%);
+  padding: 3rem 5%;
+  overflow: hidden;
+}
+
+.about-heading {
+  position: relative;
+  top: 0;
+  left: 3%;
+  font: var(--font-secondary);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.about-me-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  background-color: #fff;
+}
+
+.about-me-grid-item {
+  height: 25vh;
+  margin: 2rem 0;
+}
+
+.contact-details {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-right: 2px dotted #FFC53D;
+}
+
+.image {
+  width: 10rem;
+}
+
+.image img {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%
+}
+
+.contact-information {
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+h2.contact-info {
+  font-size: 1.8rem;
+  line-height: 2.8rem;
+}
+
+.contact-information span {
+  color: #FF9A3D;
+  margin-left: 1rem;
+}
+
+.about-paragraph {
+  display: flex;
+  text-align: left;
+  align-items: center;
+  justify-content: center;
+  margin: 0 3rem;
+}
+
+.about-paragraph p {
+  font: var(--font-primary);
+  line-height: 1.8;
+  font-size: 1.4rem;
+}
+
+/* Media queries */
+@media screen and (min-width: 900px) {
+  .hero {
+    height: 60vh;
+  }
+  h2.welcome {
+    font-size: 8rem;
+  }
+  p.name {
+    font-size: 3rem;
+  }
+  .social-icons {
+    letter-spacing: 1.6rem;
+    font-size: 2.5rem;
+    padding-top: 2rem;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  h2.contact-info {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 899px) {
+  .about-me {
+    background: #FAFAFF;
+  }
+  .about-me-grid {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .contact-details {
+    padding-bottom: 3rem;
+    border-right: none;
+    border-bottom: 2px dotted #FFC53D;
+  }
+}
+
+@media screen and (max-width: 625px) {
+  .container {
+    padding: 0 1.4rem;
+  }
+  .nav {
+    height: 15%;
+    padding: 1rem 0;
+  }
+  .nav-icon {
+    font-size: 1.3rem;
+  }
+  .nav-item {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .contact-information {
+    margin-left: 1rem;
+  }
+  h2.contact-info {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  .contact-information span {
+    margin-left: .5rem;
+  }
+  .about-paragraph p {
+    font-size: 1.2rem;
+    line-height: normal;
+    padding-bottom: 1rem;
+  }
 }
