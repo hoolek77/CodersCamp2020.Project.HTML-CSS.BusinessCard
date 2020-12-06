@@ -156,6 +156,7 @@ h2.help {
   font-weight: 400;
   color: #ffc53d;
   background-color: white;
+  cursor: pointer;
 }
 
 button.btn:hover {
@@ -172,7 +173,7 @@ button.btn:hover {
 
 .about-me {
   position: relative;
-  background: linear-gradient(to right, #FAFAFF 60%, #fff 40%);
+  background: linear-gradient(to right, #FAFAFF 70%, #fff 40%);
   padding: 3rem 5%;
   overflow: hidden;
 }
@@ -191,6 +192,7 @@ button.btn:hover {
   display: grid;
   grid-template-columns: 2fr 3fr;
   background-color: #fff;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
 }
 
 .about-me-grid-item {
@@ -246,6 +248,67 @@ h2.contact-info {
   font-size: 1.4rem;
 }
 
+/* Skills */
+
+.skills {
+  position: relative;
+  background: linear-gradient(to left, #FAFAFF 70%, #fff 40%);
+  padding: 3rem 5%;
+  overflow: hidden;
+  margin-top: 4rem;
+}
+
+.skills-heading {
+  position: relative;
+  top: 0;
+  left: 30%;
+  font: var(--font-secondary);
+  font-weight: 700;
+  font-size: 3.2rem;
+}
+
+.skills-container {
+  display: flex;
+  width: 100%;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.skills-item {
+  width: calc(100% / 3);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 1.5rem 0;
+  background-color: #fff;
+}
+
+.skills-item-border {
+  margin: 1rem 0;
+  border-right: 2px dotted #FFC53D;
+}
+
+.skills-item i {
+  font-size: 7rem;
+  color: #515151;
+}
+
+.skills-item h2 {
+  margin-top: 2rem;
+  color: #ffc53d;
+  font-size: 2.4rem;
+}
+
+.skills-item p {
+  margin-top: 1rem;
+  font: var(--font-primary);
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+
+.skills-no-border {
+  border: none;
+}
+
 /* Media queries */
 @media screen and (min-width: 900px) {
   .hero {
@@ -278,15 +341,54 @@ h2.contact-info {
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr;
   }
-
+  .about-me-grid-item {
+    height: auto;
+  }
   .contact-details {
     padding-bottom: 3rem;
     border-right: none;
     border-bottom: 2px dotted #FFC53D;
   }
+  .skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    background-color: #fff;
+    justify-content: center;
+    align-items: center;
+  }
+  .skills-item {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px dotted #FFC53D;
+  }
+  .skills-item-border {
+    border: none;
+  }
+  .skills-no-border {
+    border: none;
+  }
 }
 
-@media screen and (max-width: 625px) {
+@media screen and (max-width: 640px) {
+  .container {
+    padding: 0 1.4rem;
+  }
+  .nav {
+    height: 15%;
+    padding: 1rem 0;
+  }
+  .nav-icon {
+    font-size: 2rem;
+  }
+  .nav-item {
+    font-size: 1.7rem;
+    margin: 1rem;
+  }
+}
+
+@media screen and (max-width: 420px) {
   .container {
     padding: 0 1.4rem;
   }
@@ -299,6 +401,7 @@ h2.contact-info {
   }
   .nav-item {
     font-size: 1.2rem;
+    margin: 1rem;
   }
 }
 
