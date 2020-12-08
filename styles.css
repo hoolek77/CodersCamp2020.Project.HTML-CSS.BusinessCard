@@ -18,6 +18,7 @@ html {
   font-family: var(--font-primary);
   font-size: 10px;
   font-weight: 400;
+  font-style: normal;
   color: var(--color-primary);  
   scroll-behavior: smooth;
 }
@@ -29,6 +30,10 @@ body {
 section {
   padding: 3.9rem 0;
   overflow: hidden;
+}
+
+button {
+  outline: none;
 }
 
 img {
@@ -112,7 +117,7 @@ p.name {
 
 .social-icons {
   letter-spacing: 1.5rem;
-  font-size: 2rem;
+  font-size: 2.4rem;
   padding-top: 2rem;
 }
 
@@ -367,6 +372,7 @@ h2.contact-info {
   position: relative;
   width: 7rem;
   height: 4rem;
+  font-size: 1.6rem;
   margin-top: 3rem;
   border-radius: 15px;
   border: 1px solid #FFC53D;
@@ -415,6 +421,143 @@ h2.contact-info {
   opacity: 0.9;
 }
 
+/* Contact Form */
+
+.contact-form {
+  padding: 3rem 5%;
+  overflow: hidden;
+  margin-top: 4rem;
+  background-color: #FAFAFF;
+}
+
+.form-container {
+  display: flex;
+  height: 60vh;
+  max-width: 100%;
+  margin: 0 auto;
+  box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.form-left {
+  position: relative;
+  width: 30%;
+  height: 100%;
+  background-color: #FF9A3D;
+}
+
+.triangle {
+  position: absolute;
+  top: 2.4rem;
+  right: -10px;
+  width: 20px;
+  height: 20px;
+  transform: rotate(45deg);
+  background-color: #FF9A3D;
+}
+
+.form-left-container {
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 2.4rem;
+  color: #fff;
+}
+
+.form-left-container .fa-envelope {
+  font-size: 4rem;
+  transform: rotate(-20deg);
+}
+
+.form-left-container p {
+  font-size: 1.7rem;
+  margin-top: 2rem;
+}
+
+.form-left-bottom {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding-bottom: 2.4rem;
+}
+
+.social-icons-form .fab:hover {
+  color: #000;
+}
+
+.form-left-bottom h3 {
+  margin-top: 1rem;
+  font: var(--font-secondary);
+  font-weight: 700;
+  font-size: 2.4rem;
+}
+
+.form-left-bottom h4 {
+  margin-top: .5rem;
+  font: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.form-left-bottom .email {
+  text-decoration: underline;
+}
+
+.form-right {
+  width: 70%;
+  height: 100%;
+  padding: 2.4rem;
+  background-color: #fff;
+}
+
+.form-right h2 {
+  font-size: 3.6rem;
+}
+
+form.form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input {
+  font: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.6rem;
+  color: #A0A0A0;
+  height: 4rem;
+  margin-top: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 15px;
+  border: 1px solid #f0f0ff;
+  background-color: #fafaff;
+}
+
+.text-area{
+  height: 20rem;
+}
+
+input.submit {
+  font: var(--font-primary);
+  font-weight: 700;
+  font-size: 1.7rem;
+  color: #FFC53D;
+  margin-left: auto;
+  margin-top: 2rem;
+  width: 10rem;
+  height: 5rem;
+  border-radius: 15px;
+  outline: none;
+  border: 1px solid #FFC53D;
+  background-color: #fff;
+}
+
+input.submit:hover {
+  background: linear-gradient(270deg, #FFC53D 14%, #FF9A3D 68.5%);
+  color: #fff;
+  transition: all .2s;
+}
+
 /* Media queries */
 @media screen and (min-width: 900px) {
   .hero {
@@ -436,6 +579,12 @@ h2.contact-info {
 @media screen and (max-width: 1200px) {
   h2.contact-info {
     font-size: 1.2rem;
+  }
+  .form-left {
+    width: 40%;
+  }
+  .form-right {
+    width: 60%;
   }
 }
 
@@ -481,6 +630,15 @@ h2.contact-info {
   .gallery-5 {
     width: 65%;
   }
+  .form-left-container p {
+    font-size: 1.5rem;
+  }
+  .form-left-bottom h3 {
+    font-size: 1.8rem;
+  }
+  .form-left-bottom h4 {
+    font-size: 1.5rem;
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -498,6 +656,18 @@ h2.contact-info {
     font-size: 1.7rem;
     margin: 1rem;
   }
+  .gallery-description h2 {
+    font-size: 2.5rem;
+  }
+  .gallery-description p {
+    font-size: 1.2rem;
+  }
+  .gallery-description button {
+    font-size: 1.3rem;
+    width: 5rem;
+    height: 2.5rem;
+    margin-top: 1rem;
+  }
 }
 
 @media screen and (max-width: 420px) {
@@ -514,6 +684,24 @@ h2.contact-info {
   .nav-item {
     font-size: 1.2rem;
     margin: 1rem;
+  }
+  .gallery-container {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+  }
+
+  .gallery-item {
+    width: 100%;
+    height: 25vh;
+  }
+
+  .gallery-2 {
+    display: none;
+  }
+
+  .gallery-4 {
+    display: none;
   }
 }
 
