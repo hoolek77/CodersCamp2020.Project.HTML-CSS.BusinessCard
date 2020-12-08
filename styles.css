@@ -67,7 +67,6 @@ a {
 .nav-icon {
   font-size: 2.4rem;
   font-weight: 700;
-  cursor: pointer;
 }
 
 .nav-list {
@@ -239,7 +238,7 @@ h2.contact-info {
   text-align: left;
   align-items: center;
   justify-content: center;
-  margin: 0 3rem;
+  margin-left: 2rem;
 }
 
 .about-paragraph p {
@@ -309,6 +308,113 @@ h2.contact-info {
   border: none;
 }
 
+/* Gallery */
+
+.gallery-heading {
+  font-size: 3.2rem;
+  text-align: center;
+}
+
+.gallery-container {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 30vh;
+  margin-bottom: 0;
+}
+
+.gallery-item {
+  height: 100%;
+}
+
+.gallery-1 {
+  position: relative;
+  width: 40%;
+  background: url(./images/gallery-1.png) center no-repeat;
+  background-size: cover;
+}
+
+.gallery-1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+  opacity: 0.9999;
+}
+
+.gallery-description {
+  margin: 5% 5%;
+}
+
+.gallery-description h2 {
+  position: relative;
+  color: white;
+  font-size: 4rem;
+}
+
+.gallery-description p {
+  position: relative;
+  font: var(--font-primary);
+  font-weight: 400;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.gallery-description button {
+  position: relative;
+  width: 7rem;
+  height: 4rem;
+  margin-top: 7%;
+  border-radius: 15px;
+  border: 1px solid #FFC53D;
+  color: var(--color-primary);
+}
+
+.gallery-description button:hover {
+  color: var(--color-secondary);
+  background: var(--btn-gradient);
+  transition: all .2s;
+}
+
+.gallery-2 {
+  width: 25%;
+  background: url(./images/gallery-2.png) center no-repeat;
+  background-size: cover;
+}
+
+.gallery-3 {
+  width: 35%;
+  background: url(./images/gallery-3.png) center no-repeat;
+  background-size: cover;
+}
+
+.gallery-4 {
+  width: 20%;
+  background: url(./images/gallery-4.png) center no-repeat;
+  background-size: cover;
+}
+
+.gallery-5 {
+  position: relative;
+  width: 80%;
+  background: url(./images/gallery-5.png) center no-repeat;
+  background-size: cover;
+}
+
+.gallery-5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
+  opacity: 0.9;
+}
+
 /* Media queries */
 @media screen and (min-width: 900px) {
   .hero {
@@ -368,6 +474,12 @@ h2.contact-info {
   }
   .skills-no-border {
     border: none;
+  }
+  .gallery-4 {
+    width: 35%;
+  }
+  .gallery-5 {
+    width: 65%;
   }
 }
 
