@@ -91,6 +91,13 @@ a[href^=tel] {
   font-size: 1.8rem;
 }
 
+input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  opacity: 1;
+}  
+
 .nav-item:hover {
   color: #FFC53D;
   transition: all .2s;
@@ -380,13 +387,14 @@ h2.contact-info {
   font-size: 1.6rem;
   margin-top: 3rem;
   border-radius: 15px;
-  border: 1px solid #FFC53D;
-  color: var(--color-primary);
+  color: var(--color-secondary);
+  background: var(--btn-gradient);
+  border: none;
+  cursor: pointer;
 }
 
 .gallery-description button:hover {
-  color: var(--color-secondary);
-  background: var(--btn-gradient);
+  transform: scale(1.2);
   transition: all .2s;
 }
 
@@ -555,7 +563,6 @@ input.submit {
   outline: none;
   border: 1px solid #FFC53D;
   background-color: #fff;
-  -webkit-appearance: none;
 }
 
 input.submit:hover {
