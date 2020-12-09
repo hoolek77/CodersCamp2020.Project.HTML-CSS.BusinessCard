@@ -679,12 +679,12 @@ input.submit:hover {
   .form-container {
     display: flex;
     flex-direction: column;
-    height: 120vh;
+    height: 100rem;
   }
   .form-left {
     position: relative;
     width: 100%;
-    height: 55vh;
+    height: 45rem;
   }
   .triangle {
     display: none;
@@ -696,7 +696,7 @@ input.submit:hover {
   }
   .form-right {
     width: 100%;
-    height: 65vh;
+    height: 55rem;
   }
 }
 @media screen and (max-width: 640px) {
