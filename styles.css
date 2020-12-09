@@ -45,6 +45,11 @@ a {
   text-decoration: none;
 }
 
+a[href^=tel] {
+  text-decoration:inherit;
+  color: inherit;
+}
+
 .container {
   width: 100%;
   max-width: 100%;
@@ -550,6 +555,7 @@ input.submit {
   outline: none;
   border: 1px solid #FFC53D;
   background-color: #fff;
+  -webkit-appearance: none;
 }
 
 input.submit:hover {
@@ -666,12 +672,12 @@ input.submit:hover {
   .form-container {
     display: flex;
     flex-direction: column;
-    height: auto;
+    height: 120vh;
   }
   .form-left {
     position: relative;
     width: 100%;
-    height: auto;
+    height: 55vh;
   }
   .triangle {
     display: none;
@@ -683,7 +689,7 @@ input.submit:hover {
   }
   .form-right {
     width: 100%;
-    height: auto;
+    height: 65vh;
   }
 }
 @media screen and (max-width: 640px) {
