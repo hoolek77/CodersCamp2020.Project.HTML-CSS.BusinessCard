@@ -558,6 +558,23 @@ input.submit:hover {
   transition: all .2s;
 }
 
+/* Footer */
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 5vh;
+}
+
+.footer h4 {
+  font: var(--font-secondary);
+  font-weight: 400;
+  font-size: 1.4rem;
+  color: #A0A0A0;
+}
+
 /* Media queries */
 @media screen and (min-width: 900px) {
   .hero {
@@ -641,6 +658,43 @@ input.submit:hover {
   }
 }
 
+@media screen and (max-width: 800px) {
+  h2.mobile-heading {
+    text-align: center;
+  }
+  .form-container {
+    display: flex;
+    flex-direction: column;
+    height: 120vh;
+  }
+  .form-left {
+    position: relative;
+    width: 100%;
+    height: 55vh;
+  }
+  .triangle {
+    display: none;
+  }
+  .triangle-2 {
+    display: block;
+    position: absolute;
+    top: calc(55vh - 10px);
+    left: 2.4rem;
+    width: 20px;
+    height: 20px;
+    transform: rotate(-45deg);
+    background-color: #FF9A3D;
+  }
+  .form-left-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .form-right {
+    width: 100%;
+    height: 100%;
+  }
+}
 @media screen and (max-width: 640px) {
   .container {
     padding: 0 1.4rem;
