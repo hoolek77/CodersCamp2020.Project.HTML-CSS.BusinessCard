@@ -6,7 +6,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Szymon Kin</title>
-    <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
+    <meta property="og:title" content="Szymon Kin" />
+    <meta property="og:image" content="https://www.google.com/url?sa=i&url=https%3A%2F%2Femojis.wiki%2Fman-technologist%2F&psig=AOvVaw0h0iFEufbCZ3S9aE7SUBhi&ust=1607731957337000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCMjQ2rPSxO0CFQAAAAAdAAAAABAD" />
+    <meta name="description" content="Web Developer Portfolio">
     <meta name=”format-detection” content=”telephone=no”>
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -23,14 +25,13 @@
         <div class="container">
             <nav class="nav">
                 <div class="nav-icon">
-                    <i class="fas fa-laptop-code"></i>
-                    Dev
+                    <a href="#"><i class="fas fa-laptop-code"></i> Dev</a>
                 </div>
                 <ul class="nav-list">
-                    <li class="nav-item">About me</li>
-                    <li class="nav-item">Skills</li>
-                    <li class="nav-item">Portfolio</li>
-                    <li class="nav-item">Contact</li>
+                    <li class="nav-item"><a href="#about-me">About</a></li>
+                    <li class="nav-item"><a href="#skills">Skills</a></li>
+                    <li class="nav-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="nav-item"><a href="#contact">Contact</a></li>
                 </ul>
                 </nav>
         </div>
@@ -59,7 +60,7 @@
         </div>
     </section>
     <!-- Contact ends -->
-    <section class="about-me">
+    <section id="about-me" class="about-me">
         <div class="container">
             <h2 class="about-heading">About me</h2>
             <div class="about-me-grid">
@@ -71,16 +72,16 @@
                         <h2 class="contact-info">Full name:<span class="contact-answer">Szymon Kin</span></h2>
                         <h2 class="contact-info">Age:<span class="contact-answer">19 years</span></h2>
                         <h2 class="contact-info">Profile:<span class="contact-answer">Fullstack</span></h2>
-                        <h2 class="contact-info">Telephone:<span class="contact-answer">+48 515 191 231</span></h2>
-                        <h2 class="contact-info">E-mail:<span class="contact-answer">szymon.kin@gmail.com</span></h2>
+                        <h2 class="contact-info">Telephone:<span class="contact-answer"><a href="tel:515191231">+48 515 191 231</a></span></h2>
+                        <h2 class="contact-info">E-mail:<span class="contact-answer"><a href="mailto:szymon.kin@gmail.com">szymon.kin@gmail.com</a></span></h2>
                     </div>
                 </div>
                 <div class="about-me-grid-item about-paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt harum reiciendis voluptatem rerum exercitationem ullam. Vel velit ipsam officia, omnis at neque atque, harum nemo cum mollitia aperiam doloremque? Eaque eveniet sapiente qui quia. Blanditiis itaque molestiae consequuntur, deleniti aut iste quam quae illum consectetur commodi? Ipsa nam blanditiis asperiores!</p></div>
         </div>
     </section>
     <!-- About me ends -->
-    <section class="skills">
-        <div class="container">
+    <section id="skills" class="skills">
+        <div class="container animation-container">
             <h2 class="skills-heading">Skills</h2>
             <div class="skills-container">
                 <div class="skills-item">
@@ -108,7 +109,7 @@
         </div>
     </section>
     <!-- Skills ends -->
-    <section class="gallery">
+    <section id="portfolio" class="gallery">
         <h2 class="gallery-heading">Portfolio</h2>
         <div class="gallery-container">
             <div class="gallery-item gallery-1">
@@ -133,7 +134,7 @@
         </div>
     </section>
     <!-- Gallery ends -->
-    <section class="contact-form">
+    <section id="contact" class="contact-form">
         <div class="container">
             <h2 class="about-heading mobile-heading">Contact me</h2>
             <div class="form-container">
