@@ -1,1 +1,1 @@
-# project for codersCamp 2020
+# Portfolio website project for CodersCamp 2020
