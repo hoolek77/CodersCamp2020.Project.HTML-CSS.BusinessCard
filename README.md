@@ -19,4 +19,4 @@ Avaliable at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
  [me](https://github.com/hoolek77)
 
 ## Project status: 
- Finished
+ In progress
