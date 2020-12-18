@@ -14,6 +14,9 @@ Avaliable at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
   * Keyframes
   * Google Fonts
   * Open Graph Protocol
+  
+## Author
+ [me](https://github.com/hoolek77)
 
 ## Project status: 
-Finished
+ Finished
