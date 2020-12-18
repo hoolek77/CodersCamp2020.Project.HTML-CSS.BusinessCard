@@ -124,12 +124,16 @@ h2.welcome {
   font-size: 7rem;
   color: #FFC53D;
   line-height: .4;
+  opacity: 0;
+  animation: fadeUp .5s forwards;
+  animation-delay: .7s;
 }
 
 p.name {
   color: var(--color-secondary);
   font-size: 2.5rem;
   padding-top: 2rem;
+  animation: scale .5s forwards;
 }
 
 .social-icons {
@@ -139,7 +143,9 @@ p.name {
 }
 
 .social-icons .fab {
-  color: var(--color-secondary)
+  color: var(--color-secondary);
+  animation: spin .5s;
+  animation-delay: .2s;
 }
 
 .social-icons .fab:hover {
@@ -827,5 +833,41 @@ input.submit:hover {
   }
   .about-paragraph p {
     font-size: 1rem;
+  }
+}
+
+/* KeyFrames */
+
+@keyframes fadeUp {
+  0%{
+    transform: translateY(4rem);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: translateY(0)
+  }
+}
+
+@keyframes scale {
+  0%{
+    transform: scale(2);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: scale(1)
+  }
+}
+
+@keyframes spin {
+  0%{
+    opacity: 0;
+    transform: rotate(0);
+  }
+  
+  100%{
+    opacity: 1;
+    transform: rotate(-360deg);
   }
 }
