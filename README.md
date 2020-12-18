@@ -3,11 +3,11 @@ Avaliable at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
 
 <img src="/images/readme-screenshoot-1.png" />
 
-## Built with:
+## Built with
  * Figma - design
  * HTML/CSS - development
 
-## Tools used: 
+## Tools used
   * Font-Awesome
   * Flexbox
   * Grid
@@ -18,5 +18,5 @@ Avaliable at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
 ## Author
  [me](https://github.com/hoolek77)
 
-## Project status: 
+## Project status 
  In progress
