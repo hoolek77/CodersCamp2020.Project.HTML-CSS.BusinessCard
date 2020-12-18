@@ -1,4 +1,4 @@
-# Portfolio website project for CodersCamp 2020
+## Portfolio website project for CodersCamp 2020
 
 [Live version](https://hoolek77.github.io/me/)
 
