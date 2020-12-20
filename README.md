@@ -1,5 +1,5 @@
 # Portfolio project for CodersCamp 2020
-Avaliable at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
+Available at [Szymon Kin Portfolio](https://hoolek77.github.io/me/)
 
 [<img src="/images/readme-screenshoot-1.png" />](https://hoolek77.github.io/me/)
 
