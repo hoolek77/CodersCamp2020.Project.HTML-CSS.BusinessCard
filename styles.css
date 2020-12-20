@@ -769,6 +769,9 @@ input.submit:hover {
     font-size: 1.2rem;
     margin: 1rem;
   }
+  .about-paragraph {
+    margin: 1rem 1rem;
+  } 
   .gallery-container {
     display: flex;
     flex-direction: column;
@@ -832,6 +835,19 @@ input.submit:hover {
     font-size: 1.2rem;
   }
   .about-paragraph p {
+    font-size: 1rem;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .contact-information {
+    margin-left: -2rem;
+  }
+  .about-paragraph {
+    margin-left: .5rem .5rem;
+    font-size: 1rem;
+  } 
+  h2.contact-info {
     font-size: 1rem;
   }
 }
