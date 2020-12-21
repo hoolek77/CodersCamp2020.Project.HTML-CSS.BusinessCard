@@ -375,7 +375,7 @@ button.btn:hover {
   left: 0;
   bottom: 0;
   background: linear-gradient(180deg, rgba(34, 34, 34, 0.5) 0%, rgba(255, 154, 61, 0.5) 100%);
-  opacity: 0.9999;
+  opacity: .9;
 }
 
 .gallery-description {
